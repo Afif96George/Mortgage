@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      MORTGAGE
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+  Calculate Your Mortgage
+  <p>
+  
+  </p>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Mortgage amount</ion-label>
+      <ion-input type="number" [value]="mortgageAmount" [(ngModel)]="mortgageAmount"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label floating>Interest rate</ion-label>
+      <ion-input type="number" [value]="interest" [(ngModel)]="interest" ></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label floating>Monthly payment</ion-label>
+      <ion-input type="number" [value]="payment" [(ngModel)]="payment" ></ion-input>
+    </ion-item>
+    
+
+    </ion-list>
+
+    
+<div id="center">
+  <button ion-button outline (click)="clicked()">Calculate</button>
+</div>
+
+
